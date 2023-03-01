@@ -1,0 +1,44 @@
+{
+  "name": "react-native-fingerprint-pro",
+  "version": "1.0.0",
+  "description": "Modulo nativo para usar fingerprint-pro",
+  "main": "lib/commonjs/index",
+  "types": "src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "android"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "bob build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/underscore": "^1.11.4",
+    "react": "^18.2.0",
+    "react-native": "^0.71.3",
+    "react-native-builder-bob": "^0.20.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "underscore": "^1.13.6"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}
